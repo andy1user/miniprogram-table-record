@@ -11,7 +11,7 @@
   <view>已无剩余物资</view>
 </mp-dialog>
 
-<table class="basic-table" scrollX="{{true}}" columns="{{tableColumns}}" dataList="{{dataList}}" getListLoading="{{getListLoading}}" showTipImage="{{dataList.length===0&!getListLoading}}" bindclicklistitem="handleClickItem" />
+<table class="basic-table" scrollX="{{true}}" columns="{{tableColumns}}" dataList="{{dataList}}" getListLoading="{{getListLoading}}" showTipImage="{{dataList.length===0&!getListLoading}}" select="{{true}}" selectKeys="{{initSelectKeys}}" bindscrolltolower="getList" bindcheckkey="handleCheckTable" bindclicklistitem="handleClickItem" />
 <button class="button" bindtap="handleClickInitCheck">重置勾选项</button>
 
 <text>pages/table/table.wxml</text>
