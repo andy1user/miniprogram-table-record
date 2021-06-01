@@ -1,0 +1,6 @@
+{
+  "usingComponents": {      
+    "table":"../../components/table/table",
+    "mp-dialog": "weui-miniprogram/dialog/dialog"
+  }
+}

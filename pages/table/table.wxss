@@ -1,0 +1,12 @@
+/* pages/table/table.wxss */
+.button-basic{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  /* align-items:flex-start;
+  align-content:flex-start; */
+}
+.button{
+  margin-top: 30rpx;
+  background-color: #fff;
+}
