@@ -16,12 +16,9 @@ Page({
   // 事件处理函数
   bindViewTap() {
     wx.navigateTo({
-<<<<<<< HEAD
       // url: '../logs/logs'
       url: '../table/table'
-=======
-      url: '../logs/logs'
->>>>>>> ddceb6c5569071f932a509f4e6a0f887ce8e0e04
+
     })
   },
   onLoad() {

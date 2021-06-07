@@ -7,12 +7,16 @@
 <view class='button-basic'>
   <button type="primary" plain="true"  bindtap="tapButton">申请</button>
 </view>
-<mp-dialog title="说明" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+<mp-dialog title="提示" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
   <view>已无剩余物资</view>
 </mp-dialog>
 
-<table class="basic-table" scrollX="{{true}}" columns="{{tableColumns}}" dataList="{{dataList}}" getListLoading="{{getListLoading}}" showTipImage="{{dataList.length===0&!getListLoading}}" select="{{true}}" selectKeys="{{initSelectKeys}}" bindscrolltolower="getList" bindcheckkey="handleCheckTable" bindclicklistitem="handleClickItem" />
-<button class="button" bindtap="handleClickInitCheck">重置勾选项</button>
+<table class="basic-table" scrollX="{{true}}" columns="{{tableColumns}}" dataList="{{dataList}}" getListLoading="{{getListLoading}}" showTipImage="{{dataList.length===0&!getListLoading}}" select="{{select}}" selectKeys="{{selectKeys}}" bindscrolltolower="getList" bindcheckkey="handleCheckTable" bindclicklistitem="handleClickItem" />
+<view class='button-check'>
+  <button type="primary" plain="true"  bindtap="handleClickConfirm">确定</button>
+  <button type="default" plain="true"  bindtap="handleClickInitCheck">重置勾选项</button>
+</view>
 
 <text>pages/table/table.wxml</text>
 <view>{{ab}}</view>
+<!-- <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar> -->

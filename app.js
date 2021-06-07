@@ -15,6 +15,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    appID: 'ANDY'
+    appID: 'ANDY',
+    rowKeys: [],
+    rest: []
   }
 })

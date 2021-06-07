@@ -1,10 +1,17 @@
 /* pages/table/table.wxss */
 .button-basic{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content:flex-start;
   /* align-items:flex-start;
   align-content:flex-start; */
+}
+.button-check{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:flex-start;
+  align-content:flex-start;
 }
 .button{
   margin-top: 30rpx;
